@@ -1,0 +1,307 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Timeline">
+
+        <svg height="5" width="200">
+        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      
+        <div class="event1">
+          
+          <div class="event1Bubble">
+            <div class="eventTime">
+              <div class="DayDigit">02</div>
+              <div class="Day">
+                 Wednesday
+                <div class="MonthYear">february 2016</div>
+              </div>
+            </div>
+            <div class="eventTitle">Profile Created</div>
+          </div>
+          <div class="eventAuthor">by Youri Nelson</div>
+          <svg height="20" width="20">
+             <circle cx="10" cy="11" r="5" fill="#004165" />
+           </svg>
+          <div class="time">9 : 27 AM</div>
+          
+        </div>
+        
+        <svg height="5" width="300">
+        <line x1="0" y1="0" x2="300" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      
+        <div class="event2">
+          
+          <div class="event2Bubble">
+            <div class="eventTime">
+              <div class="DayDigit">17</div>
+              <div class="Day">
+                 Thursday
+                <div class="MonthYear">April 2016</div>
+              </div>
+            </div>
+            <div class="eventTitle">Phone Interview</div>
+          </div>
+          <div class="event2Author">by Tom Eggleston</div>
+            <svg height="20" width="20">
+          <circle cx="10" cy="11" r="5" fill="#004165" />
+          </svg>
+          <div class="time2">1 : 32 PM</div>
+        </div>
+        
+        <svg height="5" width="50">
+        <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      
+        <div class="now">
+          NOW
+        </div>  
+          
+        
+        <svg height="5" width="150">
+        <line x1="0" y1="0" x2="150" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+        <div class="event3 futureGray ">
+          <div class="event1Bubble futureOpacity">
+            <div class="eventTime">
+              <div class="DayDigit">05</div>
+              <div class="Day">
+                 Tuesday
+                <div class="MonthYear">May 2016</div>
+              </div>
+            </div>
+            <div class="eventTitle">Anticipated Hire</div>
+          </div>
+            <svg height="20" width="20">
+          <circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)" />
+          </svg>
+        </div>
+      <svg height="5" width="50">
+      <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" /> 
+      </svg>
+      <svg height="20" width="42">
+      <line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2" /> 
+      <circle cx="11" cy="10" r="3" fill="#004165" />  
+      <circle cx="21" cy="10" r="3" fill="#004165" />  
+      <circle cx="31" cy="10" r="3" fill="#004165" />    
+      <line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2" /> 
+      </svg>  
+        
+      </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            font-weight: 700;
+            margin-top: 125px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            line-height: 23px;
+        }
+
+        /* --- Start progress bar --- */
+
+        .process-wrapper {
+            margin: auto;
+            max-width: 1080px;
+        }
+
+        #progress-bar-container {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            height: 100px;
+            margin-top: 65px;
+        }
+
+        #progress-bar-container ul {
+            padding: 0;
+            margin: 0;
+            padding-top: 15px;
+            z-index: 9999;
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+        }
+
+        #progress-bar-container li:before {
+            content: " ";
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: solid 2px #aaa;
+            transition: all ease 0.3s;
+        }
+
+        #progress-bar-container li.active:before,
+        #progress-bar-container li:hover:before {
+            border: solid 2px #fff;
+            background: linear-gradient(to right, #E91E63 0%, #fff 100%);
+        }
+
+        #progress-bar-container li {
+            list-style: none;
+            float: left;
+            width: 20%;
+            text-align: center;
+            color: #aaa;
+            text-transform: uppercase;
+            font-size: 11px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all ease 0.2s;
+            vertical-align: bottom;
+            height: 60px;
+            position: relative;
+        }
+
+        #progress-bar-container li .step-inner {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+        }
+
+        #progress-bar-container li.active,
+        #progress-bar-container li:hover {
+            color: #444;
+        }
+
+        #progress-bar-container li:after {
+            content: " ";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #777;
+            margin: auto;
+            border: solid 7px #fff;
+            border-radius: 50%;
+            margin-top: 40px;
+            box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+            transition: all ease 0.2s;
+        }
+
+        #progress-bar-container li:hover:after {
+            background: #555;
+        }
+
+        #progress-bar-container li.active:after {
+            background: #207893;
+        }
+
+        #progress-bar-container #line {
+            width: 80%;
+            margin: auto;
+            background: #eee;
+            height: 6px;
+            position: absolute;
+            left: 10%;
+            top: 57px;
+            z-index: 1;
+            border-radius: 50px;
+            transition: all ease 0.9s;
+        }
+
+        #progress-bar-container #line-progress {
+            content: " ";
+            width: 3%;
+            height: 100%;
+            background: #207893;
+            background: linear-gradient(to right, #207893 0%, #2ea3b7 100%);
+            position: absolute;
+            z-index: 2;
+            border-radius: 50px;
+            transition: all ease 0.9s;
+        }
+
+        /* Add class to hide progress content */
+        .hide-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENTS</h1>
+    <br>
+    <div class="process-wrapper">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active" data-target="section1"><div class="step-inner">PRE-EVENTS</div></li>
+                <li class="step step02" data-target="section2"><div class="step-inner">DAY1</div></li>
+                <li class="step step03" data-target="section3"><div class="step-inner">DAY2</div></li>
+                <li class="step step04" data-target="section4"><div class="step-inner">DAY3</div></li>
+            </ul>
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections you want to scroll to -->
+    <div id="section1" class="hide-content">
+        <h2>PRE-EVENTS</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <div id="section2" class="hide-content">
+        <h2>DAY1</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <div id="section3" class="hide-content">
+        <h2>DAY2</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <div id="section4" class="hide-content">
+        <h2>DAY3</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        // Add click event listeners to the progress bar links
+        $(".step").click(function () {
+            var target = $(this).data("target");
+
+            // Hide all sections
+            $(".hide-content").hide();
+
+            // Show the target section
+            $("#" + target).show();
+
+            // Add and remove active classes for progress bar links
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+    </script>
+</body>
+</html>
+

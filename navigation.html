@@ -1,0 +1,90 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    
+<header>
+    <nav class="navbar ">
+        <img class="logo" src="assets/IMAGES/Logo.png"/>
+        <div class="icons">
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </div>
+
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a  href="#">Events</a>
+            </li>
+            <li class="nav-item">
+                <a  href="#">Sponsors</a>
+            </li>
+            <li class="nav-item">
+                <a  href="#">Gallery</a>
+            </li>
+            <li class="nav-item">                
+                <a  href="#">Team</a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+
+
+</header>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script defer="defer" src="nav.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>Responsive Navigation Bar</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Logo</div>
+            <button class="menu-button">&#9776; Menu</button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        // JavaScript for toggling the mobile menu
+        const menuButton = document.querySelector(".menu-button");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuButton.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+    </script>
+</body>
+</html>
